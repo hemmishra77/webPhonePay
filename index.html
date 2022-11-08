@@ -1,0 +1,1728 @@
+d<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        div{
+            display: block;
+        }
+        .navbar{
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+
+        }
+        .navbar a {
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            /* border: 1px solid red; */
+            font-size: 16px;
+            margin: 0px 20px 0px 20px;
+
+        }
+        .navbar a img{
+            width: 140px;
+            height: 35px;
+            /* margin-right: 25px; */
+        }
+        #nav-img{
+            display: block;
+            
+            margin-right: 25px;
+        }
+/* images-slider */
+.slider-frame{
+    overflow: hidden;
+    height: 475px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: 360px; */
+    margin-top: 20px;
+}
+
+/*slide animation */
+@-webkit-keyframes slide_animation{
+    0%{left: 0px;}
+    10%{left: 0px;}
+    20%{left: 1200px;}
+    30%{left: 1200px;}
+    40%{left: 2400px;}
+    50%{left: 2400px;}
+    60%{left: 1200px;}
+    70%{left: 1200px;}
+    80%{left: 0px;}
+    90%{left: 0px;}
+    100%{left: 0px;}
+}
+
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 18s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+
+/* third-row */
+.third-row{
+    margin-top: 70px;
+    margin-bottom: 80px;
+    /* border: 1px solid red; */
+    height: 300px;
+}
+
+.third-row-el{
+display: flex ;
+justify-content: center;
+align-items: center;
+gap: 15px;
+
+}
+a:active{
+    /* color:initial ; */
+}
+.third-row-el a{
+    text-decoration: none;
+    display: block;
+    height: 300px;
+    width: 550px;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+.third-row-el-1{
+    background-image:url(towfiqu-barbhuiya-joqWSI9u_XM-unsplash.jpg);
+    background-repeat: no-repeat;
+
+    /* background-position-x: 10%; */
+    background-position-x: center;
+    background-position-y: center;
+
+}
+.third-row-el-1 h2 {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 50px;
+    line-height: 35px;
+    color: rgb(6, 6, 103);
+    font-family: sans-serif;
+    font-weight: 700;
+    /* font-style: normal; */
+    
+}
+.third-row-el-1 p{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 25px;
+    line-height: 25px;
+    color: rgb(26, 32, 154);
+    margin-bottom: 10px;
+
+}
+.third-row-el-1 div span{
+    margin-left: 30px;
+    font-size: 40px;
+    color: rgb(39, 39, 240);
+    
+    
+}
+
+.third-row-el-2{
+    background-image: url(mutual_fund.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 60%;
+}
+
+
+
+.third-row-el-2 h2 {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 50px;
+    line-height: 35px;
+    color: rgb(6, 6, 103);
+    font-family: sans-serif;
+    font-weight: 700;
+    /* font-style: normal; */
+    
+}
+.third-row-el-2 p{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 25px;
+    line-height: 25px;
+    color: rgb(26, 32, 154);
+    margin-bottom: 10px;
+
+}
+.third-row-el-2 div span{
+    margin-left: 30px;
+    font-size: 40px;
+    color: rgb(39, 39, 240);
+    
+    
+}
+
+.fourth-row{
+    /* border: 1px solid red; */
+    height: 650px;
+}
+.fourth-row-el{
+    /* border: 1px solid black; */
+    height: 650px;
+
+    display: flex;
+    justify-content: center;
+align-items: center;
+gap: 15px;
+}
+
+.fourth-row-el{
+    text-decoration: none;
+    /* display: block; */
+    /* height: 650px; */
+    /* width: 550px; */
+    /* border: 1px solid red; */
+    /* border-radius: 10px; */
+    
+}  
+.third-row-box{
+    transition: box-shadow .3s;
+}
+.third-row-box:hover{
+box-shadow: 0 0 21px rgba(33,33,33,.2);
+}
+
+
+.fourth-row-el-1{
+    /* border: 1px solid green; */
+    height: 650px;
+    width: 550px;
+    margin-right: 20px;
+    padding: 20px;
+
+
+}
+.fourth-row-el-1 h1{
+    font-size: 40px;
+    /* margin-left: 30px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 35px;
+    color: rgb(6, 6, 103);
+    font-family: sans-serif;
+    font-weight: 700;
+
+}
+.fourth-row-el-1 h2{
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: sans-serif;
+    letter-spacing: .53px;
+    color: #323232;
+    margin: 20px 0 20px 0;
+}
+.fourth-row-el-1 p{
+    font-size: 15px;
+    font-weight: 300;
+    /* font-family: sans-serif; */
+    width: 90%;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: #232028;
+    opacity: 0.50;
+}
+.fourth-row-el-1 span{
+    display: inline-block;
+    /* display: inline; */
+    width: 100%;
+    height: 1px;
+    background-color: #979797;
+}
+
+.fourth-row-el-2{
+    /* border: 1px solid green; */
+    height: 650px;
+    width: 635px;
+
+
+}
+
+.fifth-row{
+    /* border: 1px solid green; */
+    /* width: 100%; */
+    height:fit-content ;
+
+
+}
+.fifth-row-content{
+    /* border: 1px solid green; */
+    width: 1300px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.fifth-row-el{
+    /* border: 1px solid green; */
+    height: 100%;
+
+}
+.fifth-row-el-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fifth-row-el-header-1{
+    /* border: 1px solid red; */
+    padding-bottom: 30px;
+}
+.fifth-row-el-header-2 img{
+    /* border: 1px solid red; */
+    display: block;
+    width: 250px;
+    height: 80px;
+ }
+
+.fifth-row-el-body{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 500px;
+     display: flex;
+    align-items: flex-start;
+    justify-content: center; 
+    margin-top: 20px;
+
+
+}
+.fifth-row-el-body-el{
+    /* border: 1px solid red; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+
+
+}
+.fifth-row-el-body-el-title{
+    /* border: 1px solid red; */
+    z-index: 2;
+    height: 350px;
+    width: 20%;
+    position: relative;
+
+}
+.fifth-row-el-body-el-title-content{
+    
+    transform: scale3d(0.517, 0.517, 1);
+
+    width: 450px;
+    height: 440px;
+    position: absolute;
+    overflow: hidden;
+    left: -107%;
+    border-radius: 45px;
+    transition: all .5s cubic-bezier(.19,1,.22,1);
+    box-shadow: 0 3px 13px 2px rgb(0 0 0 / 50%);
+
+}
+.fifth-row-el-body-el-title-content-image{
+    position: relative;
+    overflow: hidden;
+
+    filter: brightness(.6);
+    transition: transform 1s cubic-bezier(.19,1,.22,1);
+    transform: scaleX(1);
+}
+.fifth-row-el-body-el-title-content-overlay{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 80px;
+    width: 80px;
+    height: 80px;
+}
+
+.fifth-row-btn-container{
+    display: block;
+    /* border: 1px solid red; */
+    border: 1px solid #533093;
+    height: 50px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+ .fifth-row-btn-container span  {
+    
+    /* border: 1px solid red; */
+    color: #371f7b;
+}
+
+.fifth-row-btn-container:hover{
+background-color:#371f7b;;
+color: white;
+}
+/* .fifth-row-btn-container span:hover  {
+color: aqua;
+} */
+
+.fifth-row-para{
+/* border: 1px solid red; */
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.fifth-row-para-content{
+    width: 860px;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    line-height: 2;
+    opacity: 0.8;
+
+}
+
+.sixth-row-full-container{
+    width: 100%;
+    height: fit-content;
+    /* border: 1px solid red; */
+    /* min-height: max-content; */
+    
+
+}
+.sixth-row-content{
+    /* border: 1px solid red; */
+    width: 1260px;
+    height: 100%;
+    /* height: 340px; */
+    margin-left: auto;
+    margin-right: auto;
+
+    
+
+}
+.sixth-row-trust_widget{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 340px;
+    padding: 22px;
+    color: #fff;
+    background: #967edd;
+    background-image: url(trust-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 38px top -4px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateY(138px);
+    box-sizing: border-box;
+    overflow: hidden;
+
+
+}
+.sixth-row-trust-widget-img{
+    margin-left: 52px;
+
+
+
+}
+
+
+.sixth-row-trust-widget-box{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 17%;
+    min-width: 100%;
+
+
+
+}
+.sixth-row-trust-widget-box h2{
+    text-shadow: 0 2px 4px rgb(0 0 0 / 5%);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    font-family: sans-serif;
+}
+.sixth-row-trust-widget-box p{
+    font-size: 1.5rem;
+    line-height: 1.7;
+    width: 40%;
+}
+.sixth-row-trust-widget__logos{
+    margin-top: 52px;
+
+}
+.sixth-row-trust-widget__logos img{
+    display: inline-block;
+    width: 100px;
+    margin-right: 32px;
+    vertical-align: middle;
+}
+
+.seventh-row{
+    /* border: 1px solid red; */
+    background: linear-gradient(#ddd8fa,#fff);
+    width: 100%;
+    text-align: center;
+    padding-top: 200px;
+    margin-bottom: 100px;
+}
+.seventh-row-content{
+    width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+    height:max-content;
+
+
+}
+    
+   
+.seventh-row-content-title{
+    text-shadow: 0 2px 4px rgb(0 0 0 / 5%);
+    color: #361968;
+    font-size: 50px;
+    font-family: sans-serif;
+    letter-spacing: -.63px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    /* margin-block-start: 0.83em; */
+    /* margin-block-end: 0.83em; */
+}
+.seventh-row-content-btn{
+    width: 20%;
+    margin: 0px auto 0px auto;
+}
+.seventh-row-btn-container{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.seventh-row-btn-container_btn{
+    /* border: 1px solid red; */
+    margin: 0px auto 0px auto;
+    padding: 0px 16px 0px 16px;
+    height: 60px;
+    
+    border-radius: 33px;
+    background-color: #07c3de;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    line-height: 57px;
+
+}
+.seventh-row-btn-container_btn span{
+    vertical-align: middle;
+}
+.seventh-row-btn-container_btn span.arrow{
+    margin-left: 3px;
+    font-size: 30px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.partner-showcase-container{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-top: 12px;
+    height: 400px;
+    will-change: transform;
+    text-align: center;
+}
+.eight-row{
+    /* border: 1px solid red; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+
+
+}
+.eight-row-content{
+    width: 1270px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.eight-row-business-overview-container{
+    /* border: 1px solid red; */
+    
+    display: flex; 
+     align-items: center;
+    justify-content: center;
+}
+.eight-row-img-section{
+
+    /* border: 1px solid red; */
+    
+   
+
+
+
+}
+.eight-row-content-section{
+    
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin-left: 140px;
+    width: 39%;
+
+
+
+}
+.eight-row-content-section h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: sans-serif;
+
+    font-weight: 600;
+    line-height: 1.16 ;
+    text-shadow: 0 2px 4px rgb(0 0 0 / 5%);
+    color: #361968;
+    letter-spacing: 1.16;
+}
+.eight-row-content-section p{
+    font-size: 16px;
+    margin-top: 7px;
+    font-weight: 50;
+    line-height: 1.88;
+    color: #333;
+    margin-bottom: 16px;
+    display: block;
+}
+.eight-row-content-section h3{
+    display: block;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: -.33px;
+    color: #323232;
+}
+
+.eight-row-content-section-section{
+    /* border: 1px solid red   ; */
+}
+.eight-row-section-section-a{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+.eight-row-section-section-a h4 {
+    font-size: 20px;
+    font-weight: 500;
+    /* letter-spacing:; */
+    color: #6739b7;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 23px;
+}
+.eight-row-section-section-a p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.88;
+    color: #333;
+    margin-top: 7px;
+    margin-bottom: 16px;
+    display: block;
+    cursor: pointer;
+
+}
+.eight-row-hr{
+    display: block;
+    height: 1px;
+    border-top: 1px solid #979797;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(151, 151, 151);
+}
+
+.ninth-row{
+    /* border: 1px solid red; */
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #f6f2ff;
+}
+.ninth-row-content{
+    width: 1270px;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+}
+.ninth-row-content-press{
+    text-align: center;
+    margin-bottom: 54px;
+    position: relative;
+}
+.ninth-row-content-press h2{
+ display: block;
+ font-size: 40px;
+ font-weight: 500;
+ line-height: 1.12;
+ color: #361968;
+ margin-bottom: 6px;
+ margin-top: 32px;
+}
+.ninth-row-content-press p{
+font-size: 10px;
+line-height: 2;
+margin-bottom: 6px;
+margin-top: 14px;
+}
+.ninth-row-content-press-article{
+    margin-top: 40px;
+    width: 100%;
+}
+.ninth-row-content-press-article-content{
+    /* border: 1px solid red; */
+    width: 1270px;
+    height:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ninth-press-article-widget{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+.ninth-press-article-widget-card{
+    width: 30%;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 23px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: none;
+    overflow: hidden;
+    transition: box-shadow .2s ease-in-out;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.ninth-press-article-widget a{
+    text-decoration: none;
+    color: inherit;
+}
+.ninth-press-article-widget-card p{
+    font-size: .875rem;
+    line-height: 1.79;
+    color: #333;
+    font-weight: 300;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.press-article-widget-card-title{
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: -.39px;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    margin-top: 18px;
+}
+.press-article-widget-card-sub-text{
+    font-size: .875rem;
+    line-height: 1.79;
+    color: #333;
+    font-weight: 300;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.press-article-widget-card-footer{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.press-article-widget-card-publisher{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.press-article-widget-card-publisher span{
+    margin-left: 3px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+.ninth-press-article-widget-card:after{
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    height: 5px;
+    width: 80%;
+    border-bottom: 4px solid #23c4da;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(35, 196, 218);
+}
+.ninth-row-content-press-btn{
+    width: 21%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+.ninth-row-button-container{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.ninth-row-button-container-btn{
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding-top: 0px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    height: 60px;
+    line-height: 57px;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+    border-bottom-left-radius: 33px;
+    border: none;
+    border-top-style: none;
+    background-color: #07c3de;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    user-select: none;
+}
+.ninth-row-button-container-btn span{
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.tenth-row{
+    background-color: #7962bd;
+}
+.tenth-row-content{
+    width: 1268px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.tenth-row-app-stats{
+    height: 444px;
+    max-width: 1268px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    background-image: url(stats.png);
+    background-position-x: 0px;
+    background-position-y: 100%;
+    background-size: 100%;
+    background-repeat: repeat-x;
+
+
+}
+.tenth-row-app-stats-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    top: 15%;
+}
+.tenth-row-app-stats-items{
+    width: 20%;
+
+}
+.app-stats-items-subtext{
+    font-size: 20px;
+    font-weight: lighter;
+    color: #dcd3ff;
+    line-height: 1.6;
+
+
+}
+.app-stats-items-text{
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+
+}
+.app-stats-footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 20%;
+
+}
+.app-stats-footer-content p{
+    font-size: 25px;
+    font-weight: 500;
+    color: #d4cbff;
+    line-height: 18px;
+
+}
+.tenth-row-app-stats-footer{
+    width: fit-content;
+    position: relative;
+    right: 70px;
+    text-decoration: none;
+
+
+
+}
+.tenth-row-btn{
+    width: 137px;
+    height: 37px;
+    line-height: 33px;
+    font-size: 20px;
+    letter-spacing: -.27px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    /* border-top-color: rgb(76, 222, 255);
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-right-color: rgb(76, 222, 255);
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-bottom-color: rgb(76, 222, 255);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-left-color: rgb(76, 222, 255);
+    border-left-style: solid;
+    border-left-width: 2px; */
+}
+.tenth-row-btn span{
+
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.eleventh-row{
+width: 100%;
+
+}
+.eleventh-row-content{
+    width:1270px;
+    height:fit-content ;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.eleventh-row-ft-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    padding-top: 70px;
+    font-size: 16px;
+}
+.eleventh-row-ft-main-item {
+    display: block;
+}
+.eleventh-row-ft-main-item p{
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.ft-main-item-title{
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 2.29;
+    margin-top: 5px;
+    margin-bottom: 14px;
+}
+.eleventh-row-ft-main-item ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+li{
+    display: list-item;
+
+}
+.eleventh-row-ft-main-item a{
+    font-size: .875rem;
+    line-height: 2.43;
+    letter-spacing: -.21px;
+    text-decoration: none;
+    color: #000;
+}
+.ft-main-item-media-icon{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+
+    </style>
+</head>
+<body>
+   <div class="navbar">
+    <a href="#" id="nav-img">
+        <img src="PhonePe-Logo.wine.png" alt="PhonePe" href>
+
+    </a>
+    <a href="">BUSINESS SOLUTION</a>
+    <a href="">PRESS</a>
+    <a href="">CAREERS</a>
+    <a href="">ABOUT US</a>
+    <a href="">BLOG</a>
+    <a href="">CONTACT US</a>
+    <a href="">TRUST AND SAFETY</a>
+   </div>
+
+   <!-- Auto image slider -->
+   <div class="slider-frame">
+    <div class="slide-images">
+        <div class="img-container">
+            <img src="hp-banner1.png" alt="img1">
+        </div>
+        <div class="img-container">
+            <img src="hp-banner2.png" alt="img2">
+        </div>
+        <div class="img-container">
+            <img src="hp-banner3.png" alt="img3">
+        </div>
+    </div>
+   </div>
+     <!-- third row   -->
+   <div class="third-row">
+    <div class="third-row-el">
+        <a class="third-row-el-1 third-row-box" href="#">
+            <h2>
+                Insurance made
+                <br>
+                easy
+
+            </h2>
+            <p>
+                Secure your life, health,
+                <br>
+                vehicles & more!
+            </p>
+            <div>
+                <span>
+                    &#8594
+                </span>
+            </div>
+
+
+        </a>
+
+
+        <a class="third-row-el-2 third-row-box" href="">
+            <h2>
+                The best in Mutuals
+                <br>
+                Investments
+
+            </h2>
+            <p>
+                Invest your wealth and achieve
+                <br>
+                your financial goals!
+            </p>
+            <div>
+                <span>
+                    &#8594
+                </span>
+            </div>
+
+
+
+
+        </a>
+
+
+        
+    </div>
+</div>
+<!-- <div class="content"></div> -->
+<div class="fourth-row">
+
+    <div class="fourth-row-el">
+
+
+        <div class="fourth-row-el-1">
+            <h1>Simple, Fast & Secure</h1>
+            <div class="fourth-row-el-1.1">
+                <h2>One app for all things money.</h2>
+                <p>Pay bills, recharge, send money, buy gold, invest and shop at your favourite stores</p>
+                <span class="horizoontal-rule"></span>
+            </div>
+            <!-- <h1>Pay whenever you like, wherever you like.</h1> -->
+            <div class="fourth-row-el-1.1">
+                <h2>Pay whenever you like, wherever you like.</h2>
+                <p>Choose from options like UPI, the PhonePe wallet or your Debit and Credit Card</p>
+                <span class="horizoontal-rule"></span>
+            </div>
+            <div class="fourth-row-el-1.1">
+                <h2>Find all your favourite apps on PhonePe Switch.</h2>
+                <p>Book flights, order food or buy groceries. Use all your favourite apps without downloading them.</p>
+                <!-- <span class="horizoontal-rule"></span> -->
+            </div>
+
+
+        </div>
+        <div class="fourth-row-el-2">
+            <!-- <video controls loop >
+                <source src="home-fast-secure-v3.mp4" type="video/mp4">
+
+            </video> -->
+
+            <video autoplay loop muted plays-inline>
+                <source src="home-fast-secure-v3.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div> 
+
+
+</div>
+
+<div class="fifth-row">
+    <div class="fifth-row-content">
+        <div class="fifth-row-el">
+
+            <div class="fifth-row-el-header">
+
+                <div class="fifth-row-el-header-1">
+
+                    <img src="no-tension.png" alt="n0-tension" ">
+                </div>
+
+                <div class="fifth-row-el-header-2">
+                    <img src="PhonePe-Logo.wine.png" alt="">
+                </div>
+            </div>
+            <div class="fifth-row-el-body">
+                <div class="fifth-row-el-body-el">
+                    <div class="fifth-row-el-body-el-title">
+                        <div class="fifth-row-el-body-el-title-content">
+
+                            <div class="fifth-row-el-body-el-title-content-image">
+                                <div aria-hidden="true" style="width: 100%; padding: bottom 98%;"></div>
+                                <picture>
+                                    <img aria-hidden="true" src="download-img-1.png" alt=""
+                                    style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 0; transition-delay: 500ms;">
+                                </picture>
+                                <picture>
+                                    <img src="download-img-1.1.png" alt=""
+                                    style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1; transition: opacity 500ms ease 0s;">
+                                </picture>
+                                
+                            </div>
+
+                            <div class="fifth-row-el-body-el-title-content-overlay">
+                                <img src="download-img-2.png" alt="play" title="play">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="fifth-row-el-body-el-2"></div>
+                    <div class="fifth-row-el-body-el-3"></div>
+                    <div class="fifth-row-el-body-el-4"></div>
+                    <div class="fifth-row-el-body-el-5"></div>
+                    <div class="fifth-row-el-body-el-6"></div>
+                    <div class="fifth-row-el-body-el-7"></div>
+
+                </div>
+            </div>
+
+            <a class="fifth-row-btn-container" href="https://www.youtube.com/watch?v=Pm_vk0ovXHo&list=PL4dV2TSluEZxmUpGaypOSVCa2YM7zKJeb&ab_channel=PhonePe" target="_blank">
+                <!-- <span>Watch all videos</span> -->
+                Watch all videos
+
+           </a>
+
+           <div class="fifth-row-para">
+            <div class="fifth-row-para-content">
+                Live life worry-free! PhonePe fulfills all your insurance needs with a wide variety of insurance choices that can be bought instantly & easily with no annoying calls and disturbance! Protect your life, car, two-wheeler and much more in a few simple clicks. Make a smart choice today and live tension-free tomorrow!
+            </div>
+           </div>
+            
+
+        </div>
+
+    </div>
+</div>
+
+<div class="sixth-row-full-container">
+    <div class="sixth-row-content">
+        <div class="sixth-row-trust_widget">
+            <div class="sixth-row-trust-widget-img">
+                <img src="100secure.png" alt="100%secure" width="200px" height="200px">
+
+            </div>
+            <div class="sixth-row-trust-widget-box">
+                <h2>Your money stays safe</h2>
+                <p>PhonePe protects your money with the best-in-class security systems that help minimize frauds.</p>
+                <div class="sixth-row-trust-widget__logos">
+
+                    <img src="trust-logo-1.png" alt="">
+                    <img src="trust-logo-2.png" alt="">
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="seventh-row">
+    <div class="seventh-row-content">
+        <h2 class="seventh-row-content-title">At 30+ Million <br>
+        stores,apps,websites & more </h2>
+
+        <div class="seventh-row-content-btn">
+            <a href="#" class="seventh-row-btn-container">
+                <span class="seventh-row-btn-container_btn">
+                    <span>Partner with us</span>
+                    <span class="arrow">
+                        &rarr;
+                        <!-- &#10132; -->
+
+                    </span>
+
+
+                </span>
+            </a>
+
+        </div>
+        <div class="">
+            <div class="partner-showcase-container">
+                <!-- <div aria-hidden="true" style="width:100%;padding-bottom:26%"></div> -->
+                <img aria-hidden="true" src="pexels-pixabay-534216 (2).jpg" alt="" width="1200" height="400">
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="eight-row">
+    <div class="eight-row-content">
+        <div class="eight-row-business-overview-container">
+            <div class="eight-row-img-section">
+                <img src="download (4).jpg" alt="" width="630px" height="660px">
+
+
+            </div>
+            <div class="eight-row-content-section">
+                <h2>For Business</h2>
+                <p>Find the digital payment solution that fits your business needs </p>
+                <br>
+                <h3 class="class">I want to:</h3>
+                <div class="eight-row-content-section-section">
+                    <a href="" class="eight-row-section-section-a">
+
+                        <h4>
+                            Be on PhonePe Switch
+                            
+                        </h4>
+                        <p class="">
+                            Get new user for your app
+                        </p>
+                        <div class="eight-row-hr"></div>
+
+                    </a>
+                    <a href="" class="eight-row-section-section-a">
+                        <h4>
+                            Accept payment at store
+                        </h4>
+                        <p>
+                            Help your business go cashless
+                        </p>
+                        <div class="eight-row-hr"></div>
+
+                    </a>
+                    <a href="" class="eight-row-section-section-a">
+                        <h4>
+                            Accept online payments
+                        </h4>
+                        <p>
+                            Set up easy payment solutions
+                        </p>
+                        <div class="eight-row-hr"></div>
+
+                    </a>
+                    <a href="" class="eight-row-section-section-a">
+                        <h4>
+                            Adertise on Phonepe
+                        </h4>
+                        <p>
+                            Advertise and let customers know about you
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="ninth-row">
+    <div class="ninth-row-content">
+        <div class="ninth-row-content-press">
+            <h2>In the Press</h2>
+            <p>Read what the Press has to say about us</p>
+
+
+        </div>
+        <div class="ninth-row-content-press-article">
+            <div class="ninth-row-content-press-article-content">
+                <div class="ninth-press-article-widget">
+                    <div class="ninth-press-article-widget-card">
+                        <a href="#">
+                            <p>04 August</p>
+                            <h2 class="press-article-widget-card-title">
+                                Phone Pay Launches Smart Speaker For Payment Tracking
+                            </h2>
+                            <p class="press-article-widget-card-sub-text">
+                                The Smart Speaker has currently been launched in 8 cities 
+                                and over 100k device are already used by...
+                            </p>
+                            <div class="press-article-widget-card-footer">
+                                <div class="press-article-widget-card-publisher">
+
+                                    <div>
+                                        <span>BW Disrupts</span>
+
+                                    </div>
+                                    <div>
+                                        <span class="press-article-widget-card-arrow">➡️</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </a>
+                        <!-- ::after == $0 -->
+                    </div>
+                    <div class="ninth-press-article-widget-card">
+                        <a href="">
+                            <p>
+                                29 July
+                            </p>
+                            <h2 class="press-article-widget-card-title">
+                                PhonePe Pte. Ltd. reaches an amicable settlement with Affle Global Pte. Ltd. to acquire OSLabs Pte. Ltd.
+                            </h2>
+                            <p class="press-article-widget-card-sub-text">
+                                PhonePe, India’s leading digital payments platform announced the acquisition of OSLabs, a mobile platform
+                            </p>
+                            <div class="press-article-widget-card-footer">
+                                <div class="press-article-widget-card-publisher">
+
+                                    <div>
+                                        <span>The Times of India</span>
+
+                                    </div>
+                                    <div>
+                                        <span class="press-article-widget-card-arrow">➡️</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+
+
+                        </a>
+
+                    </div>
+                    <div class="ninth-press-article-widget-card">
+                        <a href="">
+                            <p>
+                               15 June
+                            </p>
+                            <h2 class="press-article-widget-card-title">
+                                PhonePe Two-Wheeler Insurance Policy Sale Crosses One Million Mark Since Launch
+                            </h2>
+                            <p class="press-article-widget-card-sub-text">
+                                PhonePe believed that the number of sales was a testimony to the success of the company's effort in increasing customer
+                            </p>
+                            <div class="press-article-widget-card-footer">
+                                <div class="press-article-widget-card-publisher">
+
+                                    <div>
+                                        <span>News18</span>
+
+                                    </div>
+                                    <div>
+                                        <span class="press-article-widget-card-arrow">➡️</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="ninth-row-content-press-btn">
+            <a href="" class="ninth-row-btn-container">
+                <span class="ninth-row-button-container-btn">
+                    <span>See All News</span>
+
+
+                </span>
+
+
+            </a>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="tenth-row">
+    <div class="tenth-row-content">
+        <div class="tenth-row-app-stats">
+            <div class="tenth-row-app-stats-content">
+
+                <div class="app-stats-items">
+
+                    <span class="app-stats-items-subtext">
+                        Trusted by
+
+                    </span>
+                    <br>
+                    <span class="app-stats-items-text">
+
+                        400 Million
+                    </span>
+                    <br>
+                    <span class="app-stats-items-subtext">
+                        Registered Users
+
+                    </span>
+                    
+                </div>
+
+                <div class="app-stats-items">
+
+                    <span class="app-stats-items-subtext">
+                        Accepted all over
+
+                    </span>
+                    <br>
+                    <span class="app-stats-items-text">
+
+                        India
+                    </span>
+                    
+                </div>
+
+
+                <div class="app-stats-items">
+
+                    
+                    <span class="app-stats-items-subtext">
+                        Accepted at
+
+                    </span>
+                    <br>
+                    <span class="app-stats-items-text">
+
+                        30 Million
+                    </span>
+                    <br>
+                    <span class="app-stats-items-subtext">
+                        Stores
+
+                    </span>
+
+
+
+
+                </div>
+
+
+            </div>
+
+            <div class="app-stats-footer-Content">
+                <p>
+                    Get the latest data trends and insights on PhonePe Pulse!
+                </p>
+
+                <a href="" class="tenth-row-app-stats-footer">
+                    <span class="tenth-row-btn">
+                        <span>Explore Now</span>
+
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div class="eleventh-row">
+    <div class="eleventh-row-content">
+        <footer class="eleventh-row-ft-main">
+            <div class="eleventh-row-ft-main-item">
+                <p>
+                    <img src="PhonePe-Logo.wine.png" alt="" width="120">
+                </p>
+
+
+
+
+
+            </div>
+            <div class="eleventh-row-ft-main-item">
+                <h3 class="ft-main-item-title">General</h3>
+                <ul class="">
+                    <li>
+                        <a href="#">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Business Solutions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Report Vulnerability
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Merchant Partners
+                        </a>
+                    </li>
+                </ul>
+                <div class="ft-copyright">
+                    © 2022, All rights reserved
+                </div>
+
+
+
+            </div>
+            <div class="eleventh-row-ft-main-item">
+                <h3 class="ft-main-item-title">Connect</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Careers
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Ethics <img src="ethics.svg" alt="" width="12" style="margin-left:4px;vertical-align:middle;position:relative;top:-1px">
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Blog
+
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="eleventh-row-ft-main-item">
+                <h3 class="ft-main-item-title">Legal</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Grievance Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            How to Pay
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            E-Waste Policy
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="eleventh-row-ft-main-item">
+                <h3 class="ft-main-item-title">Certification</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="sisa.png" height="71" width="113" alt="">
+                            <img src="ethics.svg" alt="" width="12" style="margin-left:4px;vertical-align:middle;position:relative;top:-1px">
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="eleventh-row-ft-main-item">
+
+                <h3 class="ft-main-item-title">See All Apps</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="download.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <ul class="ft-main-item-media-icon">
+                        <li>
+
+                            <a href="#">
+                                <img src="linked in.svg" alt="">
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a href="#">
+                                <img src="twitter.svg" alt="">
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a href="#">
+                                <img src="facebook.svg" alt="">
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+        </footer>
+
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
